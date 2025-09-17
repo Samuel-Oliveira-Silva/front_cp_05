@@ -45,7 +45,7 @@
 
 ## 📂 Estrutura do Projeto
 
-/melodia
+/front_cp_05
 ├── index.html
 ├── README.md
 ├── css/
@@ -55,9 +55,6 @@
 └── assets/
 ├── images/
 └── fonts/
-
-yaml
-Copiar código
 
 ---
 
@@ -76,4 +73,5 @@ https://samuel-oliveira-silva.github.io/front_cp_05/
 
 📄 Licença
 Este projeto é educacional e destinado apenas para fins de aprendizado.
+
 

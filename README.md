@@ -66,8 +66,7 @@ Copiar código
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/melodia.git
-Abra o arquivo index.html em um navegador web.
+https://github.com/Samuel-Oliveira-Silva/front_cp_05.git Abra o arquivo index.html em um navegador web.
 
 Navegue pelo site e interaja com playlists, músicas e formulário de contato.
 
@@ -77,3 +76,4 @@ https://samuel-oliveira-silva.github.io/front_cp_05/
 
 📄 Licença
 Este projeto é educacional e destinado apenas para fins de aprendizado.
+

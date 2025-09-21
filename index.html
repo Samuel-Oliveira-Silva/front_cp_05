@@ -1,201 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Melodia — Sua Música, Sua Forma</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="index.js"></script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="index.css">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Melodia — Sua Música, Sua Forma</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/index.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <!-- HERO -->
-    <section class="relative min-h-[80vh] flex items-center justify-center text-center text-white bg-gradient-to-r from-blue-900 via-purple-800 to-pink-700 overflow-hidden">
-      <div class="max-w-3xl px-6 z-10">
-        <h1 class="text-5xl md:text-6xl font-display font-bold mb-4 animated-gradient-text">
-          Melodia: <span class="animated-gradient-text">Sua Música, Sua Forma</span>
-        </h1>
-        <p class="text-lg md:text-xl mb-6 text-white drop-shadow-lg">
-          Descubra artistas, crie playlists e aproveite a melhor qualidade de som em um app feito para você.
-        </p>
-        <a href="#allSongs" class="btn-hero px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
-          🎧 Ouvir Agora
-        </a>
-      </div>
+    <section
+        class="relative min-h-[80vh] flex items-center justify-center text-center text-white bg-gradient-to-r from-blue-900 via-purple-800 to-pink-700 overflow-hidden">
+        <div class="max-w-3xl px-6 z-10">
+            <h1
+                class="text-5xl md:text-6xl font-display font-bold mb-4 animated-gradient-text">
+                Melodia: <span class="animated-gradient-text">Sua Música, Sua
+                    Forma</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-6 text-white drop-shadow-lg">
+                Descubra artistas, crie playlists e aproveite a melhor qualidade
+                de som em um app feito para você.
+            </p>
+            <a href="#allSongs"
+                class="btn-hero px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+                🎧 Ouvir Agora
+            </a>
+        </div>
     </section>
-
-  <!-- DIFERENCIAIS -->
-  <section id="features" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-display font-bold text-center mb-12 gradient-text">Por que escolher a Melodia?</h2>
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="p-6 rounded-xl border-2 border-melodia bg-gradient-to-b from-purple-50 to-white shadow">
-          <div class="text-melodia text-3xl mb-4"><i class="fa-solid fa-headphones-simple"></i></div>
-          <h3 class="font-semibold">Som Premium</h3>
-          <p class="text-sm text-gray-600 mt-2">Qualidade de áudio superior, com graves profundos e agudos limpos.</p>
+    <section id="features" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2
+                class="text-3xl font-display font-bold text-center mb-12 gradient-text">
+                Por que escolher a Melodia?</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div
+                    class="p-6 rounded-xl border-2 border-melodia bg-gradient-to-b from-purple-50 to-white shadow">
+                    <div class="text-melodia text-3xl mb-4"><i
+                            class="fa-solid fa-headphones-simple"></i></div>
+                    <h3 class="font-semibold">Som Premium</h3>
+                    <p class="text-sm text-gray-600 mt-2">Qualidade de áudio
+                        superior, com graves profundos e agudos limpos.</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl border-2 border-ocean bg-gradient-to-b from-blue-50 to-white shadow">
+                    <div class="text-ocean text-3xl mb-4"><i
+                            class="fa-solid fa-list"></i></div>
+                    <h3 class="font-semibold">Playlists Únicas</h3>
+                    <p class="text-sm text-gray-600 mt-2">Monte playlists
+                        personalizadas com recomendações inteligentes.</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl border-2 border-accent bg-gradient-to-b from-pink-50 to-white shadow">
+                    <div class="text-accent text-3xl mb-4"><i
+                            class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3 class="font-semibold">Descubra Novos</h3>
+                    <p class="text-sm text-gray-600 mt-2">Explore artistas
+                        emergentes que combinam com seu estilo.</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl border-2 border-sunshine bg-gradient-to-b from-yellow-50 to-white shadow">
+                    <div class="text-sunshine text-3xl mb-4"><i
+                            class="fa-solid fa-bolt"></i></div>
+                    <h3 class="font-semibold">Interface Rápida</h3>
+                    <p class="text-sm text-gray-600 mt-2">Design limpo e fluido,
+                        fácil de navegar em qualquer dispositivo.</p>
+                </div>
+            </div>
         </div>
-        <div class="p-6 rounded-xl border-2 border-ocean bg-gradient-to-b from-blue-50 to-white shadow">
-          <div class="text-ocean text-3xl mb-4"><i class="fa-solid fa-list"></i></div>
-          <h3 class="font-semibold">Playlists Únicas</h3>
-          <p class="text-sm text-gray-600 mt-2">Monte playlists personalizadas com recomendações inteligentes.</p>
+    </section>
+    <section id="testimonials"
+        class="py-16 bg-gradient-to-r from-sunshine via-accent to-ocean">
+        <div class="max-w-6xl mx-auto px-6 text-white">
+            <h2 class="text-3xl font-display font-bold mb-8">💬 Depoimentos</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow">
+                    <p>“Som limpo e playlists incríveis. Uso todo dia!”</p>
+                    <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/150?u=mariana"
+                            alt="Foto de Mariana S."
+                            class="w-10 h-10 rounded-full mr-3">
+                        <div class="font-semibold">Mariana S.</div>
+                    </div>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow">
+                    <p>“Descobri artistas novos que nunca teria encontrado.”</p>
+                    <div class="flex items-center mt-4">
+                        <img src=" https://i.pravatar.cc/150?u=ana"
+                            alt="Foto de Lucas P."
+                            class="w-10 h-10 rounded-full mr-3">
+                        <div class="font-semibold">Lucas P.</div>
+                    </div>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow">
+                    <p>“Interface linda e super fácil de usar, amei o site.”</p>
+                    <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/150?u=lucas"
+                            alt="Foto de Ana R."
+                            class="w-10 h-10 rounded-full mr-3">
+                        <div class="font-semibold">Ana R.</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="p-6 rounded-xl border-2 border-accent bg-gradient-to-b from-pink-50 to-white shadow">
-          <div class="text-accent text-3xl mb-4"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <h3 class="font-semibold">Descubra Novos</h3>
-          <p class="text-sm text-gray-600 mt-2">Explore artistas emergentes que combinam com seu estilo.</p>
+    </section>
+    <section id="allSongs"
+        class="py-16 bg-gradient-to-r from-melodia via-ocean to-accent text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-display font-bold mb-6">🎶 Todas as músicas
+                disponíveis</h2>
+            <p class="mb-6 text-sm">Clique em uma faixa para ouvir.</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/peyruis/swing?si=c9e8843e405e490092af4e935976ad9c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                    data-title="Swing (Peyruis)">
+                    <strong>Musica 1 — Swing (Peyruis)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/mbbofficial/destination"
+                    data-title="Destination (MBB)">
+                    <strong>Musica 2 — Destination (MBB)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/pyrosion/up-above"
+                    data-title="Up Above (Pyrosion)">
+                    <strong>Musica 3 — Up Above (Pyrosion)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/scandinavianz/scandinavianz-campfire-free-download"
+                    data-title="Campfire (Scandinavianz)">
+                    <strong>Musica 4 — Campfire (Scandinavianz)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/osh-va/chilling"
+                    data-title="Chilling (Oshóva)">
+                    <strong>Musica 5 — Chilling (Oshóva)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/aminemaxwell/lovely"
+                    data-title="Lovely (Aminé Maxwell)">
+                    <strong>Musica 6 — Lovely (Aminé Maxwell)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/apashe-uebok-gottan-run-musica-sem-direitos-autorais"
+                    data-title="Uebok (Apashe)">
+                    <strong>Musica 7 — Uebok (Apashe)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/dreamland-jonas-schmidt-musica-sem-direitos-autorais"
+                    data-title="Dreamland (Jonas Schmidt)">
+                    <strong>Musica 8 — Dreamland (Jonas Schmidt)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/fredji-happy-life-musica-sem-direitos-autorais"
+                    data-title="Happy Life (Fredji)">
+                    <strong>Musica 9 — Happy Life (Fredji)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/too-sweet-ivaavi-musica-sem-direitos-autorais"
+                    data-title="Too Sweet (Ivaavi)">
+                    <strong>Musica 10 — Too Sweet (Ivaavi)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/jo-cohen-sex-whales-we-are-musica-sem-direitos-autorais"
+                    data-title="We Are (Jo Cohen & Sex Whales)">
+                    <strong>Musica 11 — We Are (Jo Cohen & Sex Whales)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/roy-knox-lost-in-sound-musica-sem-direitos-autorais"
+                    data-title="Lost in Sound (Roy Knox)">
+                    <strong>Musica 12 — Lost in Sound (Roy Knox)</strong>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow p-4 track"
+                    data-type="soundcloud"
+                    data-src="https://soundcloud.com/musicas-sem-copyright1/after-the-rain-rexlambo-free-copyright-safe-music"
+                    data-title="After the Rain (Rexlambo)">
+                    <strong>Musica 13 — After the Rain (Rexlambo)</strong>
+                </div>
+            </div>
+            <div class="mt-8 bg-white text-gray-800 rounded-lg shadow p-6">
+                <div id="nowPlaying" class="text-gray-600 mb-3">Nenhuma faixa
+                    selecionada</div>
+                <div id="scPlayer" class="mb-4 hidden">
+                    <iframe id="scIframe" width="100%" height="166"
+                        frameborder="no" allow="autoplay"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="p-6 rounded-xl border-2 border-sunshine bg-gradient-to-b from-yellow-50 to-white shadow">
-          <div class="text-sunshine text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
-          <h3 class="font-semibold">Interface Rápida</h3>
-          <p class="text-sm text-gray-600 mt-2">Design limpo e fluido, fácil de navegar em qualquer dispositivo.</p>
+    </section>
+    <section id="customPlaylist"
+        class="py-16 bg-gradient-to-r from-sunshine via-accent to-melodia text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-display font-bold mb-6">✨ Monte sua
+                Playlist</h2>
+            <p class="mb-4 text-sm">Selecione as músicas da lista acima que você
+                deseja ouvir juntas e clique em "Criar Playlist".</p>
+            <form id="playlistForm"
+                class="grid md:grid-cols-2 gap-3 bg-white text-gray-800 p-6 rounded-lg shadow">
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/peyruis/swing?si=c9e8843e405e490092af4e935976ad9c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+                    Musica 1 — Swing (Peyruis)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/mbbofficial/destination">
+                    Musica 2 — Destination (MBB)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/pyrosion/up-above"> Musica
+                    3 — Up Above (Pyrosion)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/scandinavianz/scandinavianz-campfire-free-download">
+                    Musica 4 — Campfire (Scandinavianz)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/osh-va/chilling"> Musica 5
+                    — Chilling (Oshóva)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/aminemaxwell/lovely">
+                    Musica 6 — Lovely (Aminé Maxwell)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/apashe-uebok-gottan-run-musica-sem-direitos-autorais">
+                    Musica 7 — Uebok (Apashe)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/dreamland-jonas-schmidt-musica-sem-direitos-autorais">
+                    Musica 8 — Dreamland (Jonas Schmidt)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/fredji-happy-life-musica-sem-direitos-autorais">
+                    Musica 9 — Happy Life (Fredji)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/too-sweet-ivaavi-musica-sem-direitos-autorais">
+                    Musica 10 — Too Sweet (Ivaavi)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/jo-cohen-sex-whales-we-are-musica-sem-direitos-autorais">
+                    Musica 11 — We Are (Jo Cohen & Sex Whales)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/roy-knox-lost-in-sound-musica-sem-direitos-autorais">
+                    Musica 12 — Lost in Sound (Roy Knox)</label>
+                <label><input type="checkbox" name="musicas"
+                        value="https://soundcloud.com/musicas-sem-copyright1/after-the-rain-rexlambo-free-copyright-safe-music">
+                    Musica 13 — After the Rain (Rexlambo)</label>
+                <button type="button" id="createPlaylistBtn"
+                    class="col-span-full mt-4 bg-gradient-to-r from-melodia to-accent text-white px-6 py-3 rounded-full">Criar
+                    Playlist</button>
+            </form>
+            <div id="customPlaylistOutput" class="mt-8 space-y-6"></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEPOIMENTOS -->
-  <section id="testimonials" class="py-16 bg-gradient-to-r from-sunshine via-accent to-ocean">
-    <div class="max-w-6xl mx-auto px-6 text-white">
-      <h2 class="text-3xl font-display font-bold mb-8">💬 Depoimentos</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white text-gray-800 p-6 rounded-lg shadow">
-          <p>“Som limpo e playlists incríveis. Uso todo dia!”</p>
-          <div class="mt-4 font-semibold">Mariana S.</div>
+    </section>
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2
+                class="text-3xl font-display font-bold mb-6 text-center gradient-text">
+                📬 Contato</h2>
+            <form class="max-w-2xl mx-auto grid gap-4">
+                <input type="text" placeholder="Seu nome"
+                    class="p-3 border rounded w-full" />
+                <input type="email" placeholder="Seu e-mail"
+                    class="p-3 border rounded w-full" />
+                <textarea placeholder="Mensagem"
+                    class="p-3 border rounded w-full h-32"></textarea>
+                <button
+                    class="btn-gradient px-6 py-3 rounded-full text-white font-semibold">Enviar</button>
+            </form>
         </div>
-        <div class="bg-white text-gray-800 p-6 rounded-lg shadow">
-          <p>“Descobri artistas novos que nunca teria encontrado.”</p>
-          <div class="mt-4 font-semibold">Lucas P.</div>
+    </section>
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div
+            class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div>&copy; 2025 Melodia. Todos os direitos reservados.</div>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
-        <div class="bg-white text-gray-800 p-6 rounded-lg shadow">
-          <p>“Interface linda e super fácil de usar.”</p>
-          <div class="mt-4 font-semibold">Ana R.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TODAS AS MÚSICAS DISPONÍVEIS -->
-  <section id="allSongs" class="py-16 bg-gradient-to-r from-melodia via-ocean to-accent text-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-display font-bold mb-6">🎶 Todas as músicas disponíveis</h2>
-      <p class="mb-6 text-sm">Clique em uma faixa para ouvir.</p>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- Lista de músicas -->
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/peyruis/swing?si=c9e8843e405e490092af4e935976ad9c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" data-title="Swing (Peyruis)">
-          <strong>Musica 1 — Swing (Peyruis)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/mbbofficial/destination" data-title="Destination (MBB)">
-          <strong>Musica 2 — Destination (MBB)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/pyrosion/up-above" data-title="Up Above (Pyrosion)">
-          <strong>Musica 3 — Up Above (Pyrosion)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/scandinavianz/scandinavianz-campfire-free-download" data-title="Campfire (Scandinavianz)">
-          <strong>Musica 4 — Campfire (Scandinavianz)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/osh-va/chilling" data-title="Chilling (Oshóva)">
-          <strong>Musica 5 — Chilling (Oshóva)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/aminemaxwell/lovely" data-title="Lovely (Aminé Maxwell)">
-          <strong>Musica 6 — Lovely (Aminé Maxwell)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/apashe-uebok-gottan-run-musica-sem-direitos-autorais" data-title="Uebok (Apashe)">
-          <strong>Musica 7 — Uebok (Apashe)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/dreamland-jonas-schmidt-musica-sem-direitos-autorais" data-title="Dreamland (Jonas Schmidt)">
-          <strong>Musica 8 — Dreamland (Jonas Schmidt)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/fredji-happy-life-musica-sem-direitos-autorais" data-title="Happy Life (Fredji)">
-          <strong>Musica 9 — Happy Life (Fredji)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/too-sweet-ivaavi-musica-sem-direitos-autorais" data-title="Too Sweet (Ivaavi)">
-          <strong>Musica 10 — Too Sweet (Ivaavi)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/jo-cohen-sex-whales-we-are-musica-sem-direitos-autorais" data-title="We Are (Jo Cohen & Sex Whales)">
-          <strong>Musica 11 — We Are (Jo Cohen & Sex Whales)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/roy-knox-lost-in-sound-musica-sem-direitos-autorais" data-title="Lost in Sound (Roy Knox)">
-          <strong>Musica 12 — Lost in Sound (Roy Knox)</strong>
-        </div>
-        <div class="bg-white text-gray-800 rounded-lg shadow p-4 track" data-type="soundcloud" data-src="https://soundcloud.com/musicas-sem-copyright1/after-the-rain-rexlambo-free-copyright-safe-music" data-title="After the Rain (Rexlambo)">
-          <strong>Musica 13 — After the Rain (Rexlambo)</strong>
-        </div>
-      </div>
-
-      <div class="mt-8 bg-white text-gray-800 rounded-lg shadow p-6">
-        <div id="nowPlaying" class="text-gray-600 mb-3">Nenhuma faixa selecionada</div>
-        <div id="scPlayer" class="mb-4 hidden">
-          <iframe id="scIframe" width="100%" height="166" frameborder="no" allow="autoplay"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PLAYLIST PERSONALIZADA -->
-  <section id="customPlaylist" class="py-16 bg-gradient-to-r from-sunshine via-accent to-melodia text-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-display font-bold mb-6">✨ Monte sua Playlist</h2>
-      <p class="mb-4 text-sm">Selecione as músicas da lista acima que você deseja ouvir juntas e clique em "Criar Playlist".</p>
-
-      <form id="playlistForm" class="grid md:grid-cols-2 gap-3 bg-white text-gray-800 p-6 rounded-lg shadow">
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/peyruis/swing?si=c9e8843e405e490092af4e935976ad9c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"> Musica 1 — Swing (Peyruis)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/mbbofficial/destination"> Musica 2 — Destination (MBB)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/pyrosion/up-above"> Musica 3 — Up Above (Pyrosion)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/scandinavianz/scandinavianz-campfire-free-download"> Musica 4 — Campfire (Scandinavianz)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/osh-va/chilling"> Musica 5 — Chilling (Oshóva)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/aminemaxwell/lovely"> Musica 6 — Lovely (Aminé Maxwell)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/apashe-uebok-gottan-run-musica-sem-direitos-autorais"> Musica 7 — Uebok (Apashe)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/dreamland-jonas-schmidt-musica-sem-direitos-autorais"> Musica 8 — Dreamland (Jonas Schmidt)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/fredji-happy-life-musica-sem-direitos-autorais"> Musica 9 — Happy Life (Fredji)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/too-sweet-ivaavi-musica-sem-direitos-autorais"> Musica 10 — Too Sweet (Ivaavi)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/jo-cohen-sex-whales-we-are-musica-sem-direitos-autorais"> Musica 11 — We Are (Jo Cohen & Sex Whales)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/roy-knox-lost-in-sound-musica-sem-direitos-autorais"> Musica 12 — Lost in Sound (Roy Knox)</label>
-        <label><input type="checkbox" name="musicas" value="https://soundcloud.com/musicas-sem-copyright1/after-the-rain-rexlambo-free-copyright-safe-music"> Musica 13 — After the Rain (Rexlambo)</label>
-
-        <button type="button" id="createPlaylistBtn" class="col-span-full mt-4 bg-gradient-to-r from-melodia to-accent text-white px-6 py-3 rounded-full">Criar Playlist</button>
-      </form>
-
-      <div id="customPlaylistOutput" class="mt-8 space-y-6"></div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-display font-bold mb-6 text-center gradient-text">📬 Contato</h2>
-      <form class="max-w-2xl mx-auto grid gap-4">
-        <input type="text" placeholder="Seu nome" class="p-3 border rounded w-full"/>
-        <input type="email" placeholder="Seu e-mail" class="p-3 border rounded w-full"/>
-        <textarea placeholder="Mensagem" class="p-3 border rounded w-full h-32"></textarea>
-        <button class="btn-gradient px-6 py-3 rounded-full text-white font-semibold">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer class="bg-gray-900 text-gray-300 py-8">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <div>&copy; 2025 Melodia. Todos os direitos reservados.</div>
-      <div class="flex space-x-4 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- SCRIPT PLAYLIST -->
-  <script src="soundcloud.js"></script>
-
+    </footer>
+    <script src="assets/js/soundcloud.js"></script>
 </body>
 </html>

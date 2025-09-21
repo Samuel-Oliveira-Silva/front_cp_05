@@ -10,70 +10,11 @@
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            melodia: '#7C3AED',
-            accent: '#EC4899',
-            sunshine: '#F59E0B',
-            ocean: '#3B82F6',
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Montserrat', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
+  <script src="index.js"></script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  
-    <style>
-    /* Gradiente animado no texto */
-    .animated-gradient-text {
-      background: linear-gradient(270deg, #A78BFA, #60A5FA, #F472B6, #EC4899);
-      background-size: 800% 800%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: gradientMove 10s ease infinite;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* sombra para legibilidade */
-    }
-
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* Botão estilizado */
-    .btn-hero {
-      background: #FFFFFF;
-      color: #7C3AED;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .btn-hero:hover {
-      background: #F3F3F3;
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
-    .btn-gradient {
-      background: linear-gradient(90deg, #7C3AED, #EC4899);
-      color: white;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-gradient:hover {
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
-    </style>
+  <link rel="stylesheet" href="index.css">
 
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -254,46 +195,7 @@
   </footer>
 
   <!-- SCRIPT PLAYLIST -->
-  <script>
-    const trackEls = document.querySelectorAll('.track');
-    const nowPlaying = document.getElementById('nowPlaying');
-    const scIframe = document.getElementById('scIframe');
-    const scPlayer = document.getElementById('scPlayer');
-
-    trackEls.forEach((el) => {
-      el.addEventListener('click', () => {
-        const src = el.dataset.src;
-        const title = el.dataset.title;
-        nowPlaying.innerText = "Tocando: " + title;
-        scIframe.src = "https://w.soundcloud.com/player/?url=" + encodeURIComponent(src) + "&color=%237C3AED&auto_play=true&show_artwork=true";
-        scPlayer.classList.remove('hidden');
-      });
-    });
-
-    const form = document.getElementById('playlistForm');
-    const btn = document.getElementById('createPlaylistBtn');
-    const output = document.getElementById('customPlaylistOutput');
-
-    btn.addEventListener('click', () => {
-      output.innerHTML = '';
-      const checked = form.querySelectorAll('input[name="musicas"]:checked');
-      if (checked.length === 0) {
-        output.innerHTML = '<p class="text-sm text-red-200">Selecione pelo menos uma música!</p>';
-        return;
-      }
-      checked.forEach(chk => {
-        const url = chk.value;
-        const iframe = `
-          <div class="bg-white text-gray-800 rounded-lg shadow p-4">
-            <iframe width="100%" height="166" frameborder="no" allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}&color=%237C3AED&auto_play=false&show_artwork=true">
-            </iframe>
-          </div>
-        `;
-        output.innerHTML += iframe;
-      });
-    });
-  </script>
+  <script src="soundcloud.js"></script>
 
 </body>
 </html>

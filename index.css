@@ -1,0 +1,40 @@
+.animated-gradient-text {
+      background: linear-gradient(270deg, #A78BFA, #60A5FA, #F472B6, #EC4899);
+      background-size: 800% 800%;
+      background-clip: initial;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 10s ease infinite;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* sombra para legibilidade */
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Botão estilizado */
+    .btn-hero {
+      background: #FFFFFF;
+      color: #7C3AED;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-hero:hover {
+      background: #F3F3F3;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .btn-gradient {
+      background: linear-gradient(90deg, #7C3AED, #EC4899);
+      color: white;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-gradient:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }

@@ -43,21 +43,6 @@
 
 ---
 
-## 📂 Estrutura do Projeto
-
-/front_cp_05
-├── index.html
-├── README.md
-├── css/
-│ └── styles.css
-├── js/
-│ └── script.js
-└── assets/
-├── images/
-└── fonts/
-
----
-
 ## 🚀 Como Executar
 
 1. Clone o repositório:
@@ -73,5 +58,6 @@ https://samuel-oliveira-silva.github.io/front_cp_05/
 
 📄 Licença
 Este projeto é educacional e destinado apenas para fins de aprendizado.
+
 
 
